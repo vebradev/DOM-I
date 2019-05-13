@@ -73,6 +73,10 @@ ctabtn.textContent = siteContent["cta"]["button"];
 
 // Main Content
 
+
+// console.log(Object.values(siteContent)[2]); 
+// console.log(Object.keys(siteContent)[2]);
+
 let h4 = document.querySelectorAll("h4");
 h4[0].textContent = siteContent["main-content"]["features-h4"]; // Features h4
 h4[1].textContent = siteContent["main-content"]["about-h4"]; // About h4
@@ -89,10 +93,10 @@ paragraph[2].textContent = siteContent["main-content"]["services-content"];  // 
 paragraph[3].textContent = siteContent["main-content"]["product-content"]; // Products p
 paragraph[4].textContent = siteContent["main-content"]["vision-content"];  // Vision p
 
-paragraph[5].textContent = siteContent["contact"]["address"];  // Vision p
-paragraph[6].textContent = siteContent["contact"]["phone"];  // Vision p
-paragraph[7].textContent = siteContent["contact"]["email"];  // Vision p
-paragraph[8].textContent = siteContent["footer"]["copyright"];  // Vision p
+paragraph[5].textContent = siteContent["contact"]["address"];  // Contact p
+paragraph[6].textContent = siteContent["contact"]["phone"];  // Contact p
+paragraph[7].textContent = siteContent["contact"]["email"];  // Contact p
+paragraph[8].textContent = siteContent["footer"]["copyright"];  // Contact p
 
 // New Content
 
