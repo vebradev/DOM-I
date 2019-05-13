@@ -52,6 +52,7 @@ middleImg.src = siteContent["main-content"]["middle-img-src"];
 let nav = document.querySelectorAll("nav a");
 for (i = 0; i < nav.length; i++) {
   nav[i].textContent = siteContent.nav[`nav-item-${i+1}`];
+  nav[i].style.color = `green`;
 }
 
 // Logo
@@ -92,3 +93,17 @@ paragraph[5].textContent = siteContent["contact"]["address"];  // Vision p
 paragraph[6].textContent = siteContent["contact"]["phone"];  // Vision p
 paragraph[7].textContent = siteContent["contact"]["email"];  // Vision p
 paragraph[8].textContent = siteContent["footer"]["copyright"];  // Vision p
+
+// New Content
+
+let navBegin = document.createElement("a");
+navBegin.textContent = "▶️";
+navBegin.id = "nav-begin";
+
+let navEnd = document.createElement("a");
+navEnd.textContent = "◀️";
+navEnd.id = "nav-end";
+
+let header = document.querySelector("header nav");
+header.prepend(navBegin);
+header.appendChild(navEnd);
