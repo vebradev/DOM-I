@@ -43,11 +43,6 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute("src", siteContent["nav"]["img-src"]);
-
-let cta = document.getElementById("cta-img");
-cta.setAttribute("src", siteContent["cta"]["img-src"]);
 
 let middleImg = document.getElementById("middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
@@ -58,3 +53,42 @@ let nav = document.querySelectorAll("nav a");
 for (i = 0; i < nav.length; i++) {
   nav[i].textContent = siteContent.nav[`nav-item-${i+1}`];
 }
+
+// Logo
+
+let logo = document.getElementById("logo-img");
+logo.setAttribute("src", siteContent["nav"]["img-src"]);
+
+// CTA
+
+let cta = document.getElementById("cta-img");
+cta.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let ctah1 = document.querySelector("h1");
+ctah1.textContent = siteContent["cta"]["h1"];
+
+let ctabtn = document.querySelector("button");
+ctabtn.textContent = siteContent["cta"]["button"];
+
+// Main Content
+
+let h4 = document.querySelectorAll("h4");
+h4[0].textContent = siteContent["main-content"]["features-h4"]; // Features h4
+h4[1].textContent = siteContent["main-content"]["about-h4"]; // About h4
+h4[2].textContent = siteContent["main-content"]["services-h4"]; // Services h4
+h4[3].textContent = siteContent["main-content"]["product-h4"]; // Products h4
+h4[4].textContent = siteContent["main-content"]["vision-h4"]; // Vision h4
+h4[5].textContent = siteContent["contact"]["contact-h4"]; // Vision h4
+
+
+let paragraph = document.querySelectorAll("p");
+paragraph[0].textContent = siteContent["main-content"]["features-content"]; // Features p
+paragraph[1].textContent = siteContent["main-content"]["about-content"]; // About p
+paragraph[2].textContent = siteContent["main-content"]["services-content"];  // Services p
+paragraph[3].textContent = siteContent["main-content"]["product-content"]; // Products p
+paragraph[4].textContent = siteContent["main-content"]["vision-content"];  // Vision p
+
+paragraph[5].textContent = siteContent["contact"]["address"];  // Vision p
+paragraph[6].textContent = siteContent["contact"]["phone"];  // Vision p
+paragraph[7].textContent = siteContent["contact"]["email"];  // Vision p
+paragraph[8].textContent = siteContent["footer"]["copyright"];  // Vision p
